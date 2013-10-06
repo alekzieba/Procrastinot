@@ -17,3 +17,11 @@ is "popup.html".
 If someone is caught procrastinating, they are brought to "redirect.html".
 
 In order for the Focus Timer and the website checker to be able to run, "background.html" always runs.
+
+Each of the HTML files' respective scripts end in "_script.js".
+
+The extension's permissions, version, description, etc. is managed in "manifest.json".
+
+============
+
+Happy reading!
