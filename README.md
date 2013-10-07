@@ -20,7 +20,7 @@ In order for the Focus Timer and the website checker to be able to run, "backgro
 
 Each of the HTML files' respective scripts end in "_script.js".
 
-The extension's permissions, version, description, etc. is managed in "manifest.json".
+The extension's permissions, version, description, etc. are managed in "manifest.json".
 
 ============
 
