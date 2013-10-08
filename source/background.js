@@ -20,6 +20,8 @@ var isBlockList;
 var procrastinationTimer;
 var canProcrastinate = true;
 var date = (new Date()).toDateString();
+var iconOnPath = 'images/icon_images/icon.png';
+var iconOffPath = 'images/icon_images/icon-off.png';
 
 // Execute the document when called.
 function start() {
@@ -44,9 +46,9 @@ function setIconOn(on) { // Parameter is a boolean.
 	var imagePath;
 
 	if (on) {
-		imagePath = 'icon.png';
+		imagePath = iconOnPath;
 	} else {
-		imagePath = 'icon-off.png';
+		imagePath = iconOffPath;
 	}
 	
 	chrome.browserAction.setIcon({'path': imagePath})
@@ -60,7 +62,7 @@ function addAlarmListener() {
 				type: "basic",
 				title: "Done Focusing!",
 				message: "You are done focusing!",
-				iconUrl: chrome.extension.getURL('icon-off.png')
+				iconUrl: chrome.extension.getURL(iconOffPath)
 			}
 			
 			var d = new Date();
@@ -139,9 +141,9 @@ function setIconOn(on) { // Parameter is a boolean.
 	var imagePath;
 
 	if (on) {
-		imagePath = 'icon.png';
+		imagePath = iconOnPath;
 	} else {
-		imagePath = 'icon-off.png';
+		imagePath = iconOffPath;
 	}
 	
 	chrome.browserAction.setIcon({'path': imagePath})
@@ -302,7 +304,7 @@ function addStorageListeners() {
 					type: "basic",
 					title: "Focusing!",
 					message: "You have chosen to focus for " + procrastinationTime + " minute(s)!",
-					iconUrl: chrome.extension.getURL('icon.png')
+					iconUrl: chrome.extension.getURL(iconOnPath)
 				}
 				
 				chrome.notifications.create("focusing" + parseInt(d.getTime()), options, function (notificationID) {

@@ -17,9 +17,9 @@
 	],
 	
 	"icons": { 
-		"16": "icon-16.png",
-        "48": "icon-48.png",
-        "128": "icon.png" 
+		"16": "images/icon_images/icon-16.png",
+        "48": "images/icon_images/icon-48.png",
+        "128": "images/icon_images/icon.png" 
 	},
 	
 	"background": {
@@ -28,7 +28,7 @@
 	
 	"browser_action": {
 		"default_title":"Procrastinot",
-		"default_icon": "icon.png",
+		"default_icon": "images/icon_images/icon.png",
 		"default_popup": "popup.html"
 	}
 	

@@ -84,7 +84,7 @@ function changeBackground(themeData) { // Parameter is an integer.
 			$('b').css('color', 'white');
 			$('td').css('border-top', '1px solid white');
 		}
-		$(document.body).css('background-image', 'url(background_images/background' + themeData + '.png)');
+		$(document.body).css('background-image', 'url(images/background_images/background' + themeData + '.png)');
 }
 
 // Get local data.

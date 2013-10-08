@@ -22,6 +22,8 @@ var shiftDown;
 
 var maxMin = '180';
 var timing;
+var iconOnPath = 'images/icon_images/icon.png';
+var iconOffPath = 'images/icon_images/icon-off.png';
 
 // Called when HTML file finishes loading.
 $(document).ready(function() {
@@ -43,9 +45,9 @@ function setIconOn(on) { // Parameter is a boolean.
 	var imagePath;
 
 	if (on) {
-		imagePath = 'icon.png';
+		imagePath = iconOnPath;
 	} else {
-		imagePath = 'icon-off.png';
+		imagePath = iconOffPath;
 	}
 	
 	chrome.browserAction.setIcon({'path': imagePath})
@@ -309,7 +311,7 @@ function changeTheme() {
 		$('td').css('border-top', '1px solid white');
 	}
 
-	$(document.body).css('background-image', 'url(background_images/background' + themeNumber + '.png)');	
+	$(document.body).css('background-image', 'url(images/background_images/background' + themeNumber + '.png)');	
 }
 
 
@@ -379,14 +381,14 @@ function establishListeners() {
 				type: "basic",
 				title: "Procrastinot",
 				message: "Procrastinot is now on!",
-				iconUrl: chrome.extension.getURL('icon.png')
+				iconUrl: chrome.extension.getURL(iconOnPath)
 			}
 		} else {
 			options = {
 				type: "basic",
 				title: "Procrastinot",
 				message: "Procrastinot is now off.",
-				iconUrl: chrome.extension.getURL('icon-off.png')
+				iconUrl: chrome.extension.getURL(iconOffPath)
 			}
 		}
 		
@@ -500,7 +502,7 @@ function establishListeners() {
 						type: "basic",
 						title: "Success!",
 						message: 'The website "' + domain + '" was added!',
-						iconUrl: chrome.extension.getURL('icon.png')
+						iconUrl: chrome.extension.getURL(iconOnPath)
 					};
 					
 					var d = new Date();
@@ -518,7 +520,7 @@ function establishListeners() {
 						type: "basic",
 						title: "Failure",
 						message: 'The website "' + domain + '" could not be added. Remember, you cannot add duplicate websites.',
-						iconUrl: chrome.extension.getURL('icon.png')
+						iconUrl: chrome.extension.getURL(iconOnPath)
 					};
 					
 					var d = new Date();
@@ -532,7 +534,7 @@ function establishListeners() {
 						type: "basic",
 						title: "Failure",
 						message: "This either is not a website or is chrome.google.com. You cannot block these.",
-						iconUrl: chrome.extension.getURL('icon.png')
+						iconUrl: chrome.extension.getURL(iconOnPath)
 					};
 					
 					var d = new Date();
