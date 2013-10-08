@@ -7,6 +7,20 @@ Made by Alek Zieba.
 
 ============
 
+Can't stay focused on that essay due tomorrow?  Can't get your work done without checking social
+media every few minutes?  Not to worry, Procrastinot is here for you!
+
+Procrastinot is an extension for Google Chrome that prevents you from visiting distracting websites.
+Here's how it works: you give it a list of websites, you tell the extension to either block those
+websites or only allow those websites, and boom, you're focused!  Whenever you try to access one
+of these distracting websites, Procrastinot will bring you to a redirect page with a random
+motivational quote from its database to get you back to work!
+
+It also features a "Focus Timer", where you can set a certain amount of time for you to focus.
+During this time, Procrastinot will prevent you from making distracting changes to your lists.
+
+============
+
 To use the packed extension, go to the "Extensions" settings in Google Chrome and drag "Procrastinot.crx"
 into the window.  If you just try to open the file without doing this, you will get an error saying
 that the extension can't be added because it's not from the store.
