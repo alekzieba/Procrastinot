@@ -44,6 +44,8 @@ var quotes = [
 ["Do not wait to strike till the iron is hot; but make it hot by striking.", "William B. Sprague"],
 ["Constant dripping hollows out a stone.", "Lucretius"]
 ];
+
+// Just placeholder variables to make readability easier.
 var quote = 0;
 var author = 1;
 
@@ -69,6 +71,7 @@ function displayQuote() {
 	var len = quotes.length;
 	var quoteNumber =  Math.floor(Math.random() * (len));
 	
+	// quote and author are defined as 0 and 1 above.
 	var quoteElement = '<b id="quote">"' + quotes[quoteNumber][quote] + '"</b><br /><br /><b class="alignRight" id="author"> -' + quotes[quoteNumber][author] + '</b><br /><br /><br />';
 	
 	$(quoteElement).prependTo('#quoteSpace');
@@ -97,15 +100,13 @@ function getLocalData() {
 				changeBackground(localThemeData);
 			}
 			
-			
-			
 		});
 	} catch (error) {
-	
+		// Nothing to do here.
 	}
 }
 
-// Detect when something changes.
+// Detect when something in storage changes.
 chrome.storage.onChanged.addListener(function(changes, namespace) {
 	if (changes.theme) {
 		changeBackground(changes.theme.newValue);
