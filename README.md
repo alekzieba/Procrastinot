@@ -26,7 +26,7 @@ that the "Developer mode" checkbox is checked.  Then, download the source code f
 project and decompress it to obtain the source files as seen in this GitHub page.
 
 Then, click "Load unpacked extension...", click on the "source" folder in this project,
-and Procrastinot will be installed on your computer!
+click "OK" or "Select", and Procrastinot will be installed on your computer!
 
 For some reason, Google has recently differed the ways that packaged and non-packaged
 Chrome extensions run, which broke the timer with the packed extension.  Until this is
