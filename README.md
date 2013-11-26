@@ -21,7 +21,7 @@ During this time, Procrastinot will prevent you from making distracting changes 
 
 ============
 
-To use the packed extension, go to the "Extensions" settings in Google Chrome and make sure
+To install the extension, go to the "Extensions" settings in Google Chrome and make sure
 that the "Developer mode" checkbox is checked.  Then, download the source code for this
 project and decompress it to obtain the source files as seen in this GitHub page.
 
