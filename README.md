@@ -21,9 +21,18 @@ During this time, Procrastinot will prevent you from making distracting changes 
 
 ============
 
-To use the packed extension, go to the "Extensions" settings in Google Chrome and drag "Procrastinot.crx"
-into the window.  If you just try to open the file without doing this, you will get an error saying
-that the extension can't be added because it's not from the store.
+To use the packed extension, go to the "Extensions" settings in Google Chrome and make sure
+that the "Developer mode" checkbox is checked.  Then, download the source code for this
+project and decompress it to obtain the source files as seen in this GitHub page.
+
+Then, click "Load unpacked extension...", click on the "source" folder in this project,
+and Procrastinot will be installed on your computer!
+
+For some reason, Google has recently differed the ways that packaged and non-packaged
+Chrome extensions run, which broke the timer with the packed extension.  Until this is
+fixed, we'll have to install this extension via developer mode.
+
+============
 
 The extension is managed through a drop-down area from a button next to the omnibox.  The drop-down area
 is "popup.html".
