@@ -21,16 +21,17 @@ During this time, Procrastinot will prevent you from making distracting changes 
 
 ============
 
-To install the extension, go to the "Extensions" settings in Google Chrome and make sure
-that the "Developer mode" checkbox is checked.  Then, download the source code for this
-project and decompress it to obtain the source files as seen in this GitHub page.
+To install the extension, you must first go to your Chrome extensions settings
+(you can get there by typing "chrome://extensions") in your omnibox.
 
-Then, click "Load unpacked extension...", click on the "source" folder in this project,
-click "OK" or "Select", and Procrastinot will be installed on your computer!
+Next, download the project folder and drag "Procrastinot.crx" into your
+extensions settings tab.
 
-For some reason, Google has recently differed the ways that packaged and non-packaged
-Chrome extensions run, which broke the timer with the packed extension.  Until this is
-fixed, we'll have to install this extension via developer mode.
+A "Drop to install" dialog should appear.  Let go of the extension within
+the tab and a prompt will appear to make sure that you want to install
+the extension.  Click "Add" and you're finished!
+
+Now go do some work!
 
 ============
 
