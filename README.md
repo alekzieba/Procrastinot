@@ -22,7 +22,7 @@ During this time, Procrastinot will prevent you from making distracting changes 
 ============
 
 To install the extension, you must first go to your Chrome extensions settings
-(you can get there by typing "chrome://extensions") in your omnibox.
+(you can get there by typing "chrome://extensions" in your omnibox).
 
 Next, download the project folder and drag "Procrastinot.crx" into your
 extensions settings tab.
