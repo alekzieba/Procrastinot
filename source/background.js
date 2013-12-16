@@ -306,6 +306,11 @@ function addStorageListeners() {
 					message: "You have chosen to focus for " + procrastinationTime + " minute(s)!",
 					iconUrl: chrome.extension.getURL(iconOnPath)
 				}
+			
+				if (procrastinationTime == 1) {
+					options['message'] = "You have chosen to focus for " + procrastinationTime + " minute!"
+				}
+				
 				
 				chrome.notifications.create("focusing" + parseInt(d.getTime()), options, function (notificationID) {
 					// Works!
